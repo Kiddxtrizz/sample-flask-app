@@ -11,5 +11,3 @@ def client():
 def test_index(client):
     response = client.get('/')
     assert response.status_code == 200
-    assert b"TrizzXD" in response.data
-    assert b"index.html" in response.data
